@@ -21,17 +21,32 @@
          <header> <!-- page header -->
              
             <!-- Just an image -->
-            <nav class="navbar">
+            <nav class="navbar navbar-default">
              <a class="navbar-brand" href="Portfolio.html">
               <img src="y.png" width="30" height="30" alt="y">
               </a>
-                  
-            	<ul class="nav  justify-content-end">
-            	   <li><a href="work.html">Work</a></li>
-            	   <li><a href="#about">About</a></li>
-                   <li><a href="resume.html">Resume</a></li>
-                   <li><a href="#contact">Contact</a></li>
-            	</ul>   
+               
+                <div class="topnav" id="myTopnav">
+                 <a href="Portfolio.html">Home</a>
+                 <a href="work.html">Work</a>
+                 <a href="#about">About</a>
+                 <a href="resume.html">Resume</a>
+                 <a href="#contact">Contact</a>
+                 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+
+
+             <script>
+               function myFunction() {
+               var x = document.getElementById("myTopnav");
+               if (x.className === "topnav") {
+                x.className += " responsive";
+               } else {
+               x.className = "topnav";
+                 }
+               }
+            </script>  
+                
             </nav>
             
               <h1>WenXin Yang</h1>
